@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ejemplo HTML5</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--own css-->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="container">
+                <div class="jumbotron text-center">
+                    <h1>Ejemplo HTML5</h1>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./formulario.html">Formulario</a>
+                            </li>
+                            <li>
+                                <a href="./multimedia.html">Multimedia</a>
+                            </li>
+                            <li>
+                                <a href="./canvas.html">Canvas</a>
+                            </li>
+                            <li>
+                                <a href="./draganddrop.html">Drag and Drop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-wrapper">
+                <section id="articulos">
+                    <article>
+                        <form method="post" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputreq" class="col-sm-2 control-label"> Required</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="inputreq" placeholder="Texto requerido" required maxlength="10" minlength="2">
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required autofocus>
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="url" class="col-sm-2 control-label">Url</label>
+                                <div class="col-sm-10">
+                                  <input type="url" class="form-control" id="url" placeholder="Url" required>
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="num" class="col-sm-2 control-label">Numeros</label>
+                                <div class="col-sm-10">
+                                  <input type="number" class="form-control" id="num" placeholder="Numerico" required>
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="patern" class="col-sm-2 control-label">Letras</label>
+                                <div class="col-sm-10">
+                                  <input type="text" class="form-control" id="patern" placeholder="Solo letras" required pattern="[a-zA-Z]*">
+                                </div>
+                              </div>
+                            <div class="form-group">
+                                <label for="fec" class="col-sm-2 control-label">Fecha</label>
+                                <div class="col-sm-10">
+                                  <input type="date" class="form-control" id="fec" placeholder="Fecha actual" required>
+                                </div>
+                              </div>
+                             <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Enviar</button>
+                                </div>
+                              </div>
+                        </form>
+                    </article>
+                </section>
+                 <aside>
+                    <figure>
+                        <img src="http://www.juanignacioalberola.com/wp-content/uploads/2014/05/html5.png">
+                        <figcaption>
+                            Logo html5 - epígrafe
+                        </figcaption>
+                    </figure>
+                </aside>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                Bacelli Julian, Cantoia Noel, Cordoba Pablo, Dominguez Jacobo. TFI-2015.
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -47,20 +47,9 @@
             <div class="content-wrapper">
                 <section id="articulos">
                     <article>
-                        <h2>Audio en html5</h2>
-                       <audio autoplay="autoplay" controls="controls">
-                            <source src="file.ogg" />
-                            <source src="grito.mp3" />
-                            <a href="grito.mp3">Download this file.</a>
-                        </audio>
-                    </article>
-                    <article>
-                        <h2>Video en html5</h2>
-                       <video width="320" height="240" controls preload="auto">
-                          <source src="videosimpson.mp4" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                        </video>
+                        <canvas id="myCanvas" width="200" height="100"
+                        style="border:1px solid #000000;margin-left:30%;">
+                        </canvas>
                     </article>
                 </section>
                 <aside>
@@ -79,6 +68,20 @@
                 Bacelli Julian, Cantoia Noel, Cordoba Pablo, Dominguez Jacobo. TFI-2015.
             </div>
         </footer>
-
+<script>
+    /*Dibuja una linea*/
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+    /*Dibuja un circulo*/
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+        
     </body>
 </html>

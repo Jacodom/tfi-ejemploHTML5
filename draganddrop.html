@@ -10,6 +10,24 @@
         <link rel="stylesheet" href="./css/style.css">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+.cont {width:70%;height:100px;padding:10px;border:1px solid #aaaaaa;margin-bottom: 10px;margin-left: 15%;}
+</style>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
     </head>
     <body>
         <!--header-->
@@ -47,23 +65,19 @@
             <div class="content-wrapper">
                 <section id="articulos">
                     <article>
-                        <h2>Audio en html5</h2>
-                       <audio autoplay="autoplay" controls="controls">
-                            <source src="file.ogg" />
-                            <source src="grito.mp3" />
-                            <a href="grito.mp3">Download this file.</a>
-                        </audio>
-                    </article>
-                    <article>
-                        <h2>Video en html5</h2>
-                       <video width="320" height="240" controls preload="auto">
-                          <source src="videosimpson.mp4" type="video/mp4">
-                          <source src="movie.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                        </video>
+                        <div class="cont" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="cont" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <img id="drag1" src="html5.png" draggable="true"
+ondragstart="drag(event)" width="70" height="70">
+                         <img id="drag2" src="css3-512.png" draggable="true"
+ondragstart="drag(event)" width="72" height="72">
+                        <img id="drag3" src="js_logo_512x512.png" draggable="true"
+ondragstart="drag(event)" width="72" height="72">
+                        <img id="drag4" src="bootstrap.png" draggable="true"
+ondragstart="drag(event)" width="80" height="80">
                     </article>
                 </section>
-                <aside>
+                 <aside>
                     <figure>
                         <img src="http://www.juanignacioalberola.com/wp-content/uploads/2014/05/html5.png">
                         <figcaption>
