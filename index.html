@@ -2,9 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ejemplo HTML5</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--own css-->
+        <link rel="stylesheet" href="./css/style.css">
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
@@ -12,49 +15,61 @@
         <!--header-->
         <header>
             <div class="container">
-                <h1>Ejemplo HTML5</h1>
+                <div class="jumbotron text-center">
+                    <h1>Ejemplo HTML5</h1>
+                </div>
             </div>
         </header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                        <a href="./formulario.html">Formulario</a>
-                        <a href="./multimedia.html">Multimedia</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./formulario.html">Formulario</a>
+                            </li>
+                            <li>
+                                <a href="./multimedia.html">Multimedia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <section id="contenido">
-                <article>
-                    <h2>Articulo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.
-                    </p>
-                </article>
-                <article>
-                    <h2>Articulo</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.
-                    </p>
-                </article>
-            </section>
-            <aside>
-                <figure>
-                    <img src="http://www.juanignacioalberola.com/wp-content/uploads/2014/05/html5.png">
-                    <figcaption>
-                        Logo html5 - epígrafe
-                    </figcaption>
-                </figure>
-            </aside>
+            <div class="content-wrapper">
+                <section id="articulos">
+                    <article>
+                        <h2>Articulo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Articulo</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum.
+                        </p>
+                    </article>
+                </section>
+                <aside>
+                    <figure>
+                        <img src="http://www.juanignacioalberola.com/wp-content/uploads/2014/05/html5.png">
+                        <figcaption>
+                            Logo html5 - epígrafe
+                        </figcaption>
+                    </figure>
+                </aside>
+            </div>
         </div>
 
         <footer>

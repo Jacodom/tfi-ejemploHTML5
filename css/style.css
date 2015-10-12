@@ -1,0 +1,58 @@
+body{
+    background-color: #bdc3c7;
+}
+
+header{
+    background-color: #95a5a6;
+    color: white;
+}
+
+.jumbotron{
+    background-color: #34495e;
+}
+
+.content-wrapper{
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section#articulos{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+}
+
+article{
+    margin-bottom: 50px;
+}
+
+.content-wrapper aside{
+    width: 30%;
+}
+
+aside figure img{
+    height: 100%;
+    width: 100%;
+}
+
+figure figcaption{
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer{
+    background-color: #7f8c8d;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
