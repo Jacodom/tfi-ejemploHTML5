@@ -23,11 +23,23 @@ header{
     margin-bottom: 50px;
 }
 
+@media (max-width: 600px) {
+    .content-wrapper{
+        display: block;
+    }
+}
+
 section#articulos{
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     width: 60%;
+}
+
+@media (max-width: 600px) {
+    section#articulos{
+        width: 100%;
+    }
 }
 
 article{
@@ -48,6 +60,14 @@ figure figcaption{
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .content-wrapper aside{
+        width: 80%;
+        margin: 10%;
+        text-align: center;
+    }
 }
 
 footer{
